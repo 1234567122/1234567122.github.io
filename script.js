@@ -31,24 +31,26 @@ document.querySelectorAll('.nav-list a').forEach(link => {
     });
 });
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const inputs = contactForm.querySelectorAll('input, textarea');
-    const message = {
-        id: Date.now(),
-        name: inputs[0].value,
-        email: inputs[1].value,
-        content: inputs[2].value,
-        date: new Date().toLocaleString('zh-CN')
-    };
-    
-    let messages = JSON.parse(localStorage.getItem('websiteMessages') || '[]');
-    messages.push(message);
-    localStorage.setItem('websiteMessages', JSON.stringify(messages));
-    
-    alert('感谢您的留言！我们会尽快回复您。');
-    contactForm.reset();
-});
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const inputs = contactForm.querySelectorAll('input, textarea');
+        const messageData = {
+            id: Date.now(),
+            name: inputs[0].value,
+            email: inputs[1].value,
+            content: inputs.length > 3 ? inputs[3].value : inputs[2].value,
+            date: new Date().toLocaleString('zh-CN')
+        };
+        
+        let messages = JSON.parse(localStorage.getItem('websiteMessages') || '[]');
+        messages.push(messageData);
+        localStorage.setItem('websiteMessages', JSON.stringify(messages));
+        
+        alert('感谢您的留言！我们会尽快回复您。');
+        contactForm.reset();
+    });
+}
 
 const observerOptions = {
     threshold: 0.1,
@@ -64,7 +66,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.work-card, .feature-item').forEach(el => {
+document.querySelectorAll('.feature-card, .showcase-item, .value-card, .team-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'all 0.6s ease';

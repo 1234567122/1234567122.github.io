@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
+    <title>首页 - My Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <button class="scroll-top" id="scrollTop">↑</button>
 
-    <nav class="navbar" id="navbar">
+    <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">My Website</div>
+            <a href="index.html" class="logo">My Website</a>
             <ul class="nav-list">
-                <li><a href="#home">首页</a></li>
-                <li><a href="#about">关于</a></li>
-                <li><a href="#works">作品</a></li>
-                <li><a href="#contact">联系</a></li>
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="works.html">作品</a></li>
+                <li><a href="contact.html">联系</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -26,127 +26,104 @@
         </div>
     </nav>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1 class="hero-title">欢迎来到我的个人网站</h1>
-            <p class="hero-subtitle">探索创意，分享设计，连接世界</p>
-            <a href="#about" class="btn-primary">了解更多</a>
-        </div>
+    <section class="hero">
         <div class="hero-bg"></div>
-    </section>
-
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title">关于我</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20developer%20portrait%20in%20modern%20office&image_size=square" alt="个人头像">
-                </div>
-                <div class="about-text">
-                    <h3>前端开发工程师</h3>
-                    <p>热爱编程，专注于前端开发，致力于创造优雅的用户界面和卓越的用户体验。熟悉 HTML、CSS、JavaScript 等技术，喜欢探索新技术和最佳实践。</p>
-                    <div class="skills">
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Vue.js</span>
-                    </div>
-                </div>
+        <div class="hero-content">
+            <span class="hero-tag">✨ 创意设计工作室</span>
+            <h1 class="hero-title">创造数字体验的艺术</h1>
+            <p class="hero-subtitle">我们专注于网站设计、品牌打造与用户体验，为您的业务注入新活力</p>
+            <div class="hero-buttons">
+                <a href="works.html" class="btn-primary">查看作品</a>
+                <a href="contact.html" class="btn-secondary">联系我们</a>
             </div>
+        </div>
+        <div class="hero-scroll">
+            <span>向下滚动</span>
+            <div class="scroll-arrow">↓</div>
         </div>
     </section>
 
-    <section class="works" id="works">
+    <section class="features-section">
         <div class="container">
-            <h2 class="section-title">作品展示</h2>
-            <div class="works-grid">
-                <div class="work-card">
-                    <div class="work-image">
-                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20website%20design%20mockup&image_size=square_hd" alt="项目1">
-                    </div>
-                    <div class="work-info">
-                        <h3>响应式网页设计</h3>
-                        <p>为用户提供优雅的多设备体验</p>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="work-image">
-                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mobile%20app%20ui%20design%20interface&image_size=square_hd" alt="项目2">
-                    </div>
-                    <div class="work-info">
-                        <h3>移动应用界面</h3>
-                        <p>简洁美观的移动端设计</p>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="work-image">
-                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=ecommerce%20website%20dashboard%20design&image_size=square_hd" alt="项目3">
-                    </div>
-                    <div class="work-info">
-                        <h3>电商平台</h3>
-                        <p>功能完善的在线购物系统</p>
-                    </div>
-                </div>
+            <div class="section-header">
+                <span class="section-tag">我们的服务</span>
+                <h2 class="section-title">专业能力</h2>
             </div>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="container">
-            <h2 class="section-title">专业服务</h2>
             <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">🎨</div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <span class="feature-icon">🎨</span>
+                    </div>
                     <h3>UI/UX 设计</h3>
-                    <p>创造直观、美观、易用的用户界面</p>
+                    <p>打造美观、直观的用户界面，让用户享受愉悦的使用体验</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">💻</div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <span class="feature-icon">💻</span>
+                    </div>
                     <h3>前端开发</h3>
-                    <p>使用现代技术栈构建高性能网页应用</p>
+                    <p>使用最新技术栈，构建高性能、可维护的现代Web应用</p>
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">📱</div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <span class="feature-icon">📱</span>
+                    </div>
                     <h3>响应式设计</h3>
-                    <p>确保在任何设备上都有完美的体验</p>
+                    <p>确保您的网站在任何设备上都能完美呈现</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <span class="feature-icon">🚀</span>
+                    </div>
+                    <h3>性能优化</h3>
+                    <p>提升页面加载速度，优化用户体验和搜索排名</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="showcase-section">
         <div class="container">
-            <h2 class="section-title">联系我</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>保持联系</h3>
-                    <p>有项目想法或合作意向？随时联系我！</p>
-                    <div class="contact-item">
-                        <span class="contact-icon">📧</span>
-                        <span>hello@example.com</span>
+            <div class="section-header">
+                <span class="section-tag">精选作品</span>
+                <h2 class="section-title">我们的成果</h2>
+            </div>
+            <div class="showcase-grid">
+                <div class="showcase-item">
+                    <div class="showcase-img">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20website%20design%20project&image_size=square_hd" alt="项目">
                     </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📱</span>
-                        <span>+86 138 0000 0000</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📍</span>
-                        <span>中国，北京</span>
+                    <div class="showcase-info">
+                        <span class="showcase-category">网站设计</span>
+                        <h3>企业官网设计</h3>
+                        <p>为科技公司打造的现代化品牌网站</p>
+                        <a href="works.html" class="showcase-link">查看更多 →</a>
                     </div>
                 </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" placeholder="您的姓名" required>
+                <div class="showcase-item">
+                    <div class="showcase-img">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mobile%20application%20ui%20design%20project&image_size=square_hd" alt="项目">
                     </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="您的邮箱" required>
+                    <div class="showcase-info">
+                        <span class="showcase-category">移动应用</span>
+                        <h3>金融APP设计</h3>
+                        <p>简洁高效的移动理财应用界面</p>
+                        <a href="works.html" class="showcase-link">查看更多 →</a>
                     </div>
-                    <div class="form-group">
-                        <textarea placeholder="您的留言" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">发送消息</button>
-                </form>
+                </div>
+            </div>
+            <div class="showcase-cta">
+                <a href="works.html" class="btn-outline">查看全部作品</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>准备开始您的项目了吗？</h2>
+                <p>让我们一起创造令人惊叹的数字体验</p>
+                <a href="contact.html" class="btn-white">立即联系</a>
             </div>
         </div>
     </section>
@@ -161,10 +138,10 @@
                 <div class="footer-section">
                     <h4>快速链接</h4>
                     <ul>
-                        <li><a href="#home">首页</a></li>
-                        <li><a href="#about">关于</a></li>
-                        <li><a href="#works">作品</a></li>
-                        <li><a href="#contact">联系</a></li>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="about.html">关于</a></li>
+                        <li><a href="works.html">作品</a></li>
+                        <li><a href="contact.html">联系</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
