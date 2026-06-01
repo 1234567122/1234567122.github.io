@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>关于我们 - My Website</title>
+    <title>关于我们 - 常州裕达钢结构工程有限公司</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <button class="scroll-top" id="scrollTop">↑</button>
 
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">My Website</a>
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="常州裕达钢结构工程有限公司" class="logo-img">
+                <span class="logo-text">常州裕达钢结构工程有限公司</span>
+            </a>
             <ul class="nav-list">
                 <li><a href="index.html">首页</a></li>
-                <li><a href="about.html" class="active">关于</a></li>
-                <li><a href="works.html">作品</a></li>
-                <li><a href="contact.html">联系</a></li>
+                <li><a href="products.html">产品展示</a></li>
+                <li><a href="about.html" class="active">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -26,23 +29,24 @@
         </div>
     </nav>
 
-    <section class="page-hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+    <section class="page-hero">
         <div class="page-hero-content">
             <h1>关于我们</h1>
-            <p>探索我们的故事，了解我们的团队</p>
+            <p>专注钢结构产品，品质铸就未来</p>
         </div>
     </section>
 
-    <section class="about-section">
+    <section class="about-intro">
         <div class="container">
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20developer%20team%20in%20modern%20office%20space&image_size=square_hd" alt="团队照片">
+                    <img src="images/创意集装箱房3.png" alt="工厂实景">
                 </div>
                 <div class="about-text">
-                    <h2 class="section-title">我们是谁</h2>
-                    <p>我们是一支充满激情的创意团队，专注于创造优雅的数字体验。凭借多年的行业经验，我们致力于将创意与技术完美结合。</p>
-                    <p>我们相信优秀的设计不仅能够吸引眼球，更能够触动人心。每一个项目，我们都倾注心血，力求超越期望。</p>
+                    <h2 class="section-title">公司简介</h2>
+                    <p>常州裕达钢结构工程有限公司是一家专业从事钢结构产品研发、设计、生产、销售及安装的现代化企业。公司坐落于美丽的江苏省常州市，交通便利，地理位置优越。</p>
+                    <p>我们专注于创意集装箱、集成房屋、移动房屋、移动卫生间等系列产品的研发制造，拥有现代化的生产基地和专业的技术团队，致力于为客户提供高品质、环保、实用的钢结构产品解决方案。</p>
+                    <p>多年来，我们凭借优秀的产品质量和良好的服务，赢得了广大客户的信赖和好评，产品畅销全国各地。</p>
                 </div>
             </div>
         </div>
@@ -50,49 +54,61 @@
 
     <section class="values-section">
         <div class="container">
-            <h2 class="section-title">我们的价值观</h2>
+            <h2 class="section-title">企业文化</h2>
             <div class="values-grid">
                 <div class="value-card">
-                    <div class="value-icon">🎨</div>
-                    <h3>创意无限</h3>
-                    <p>突破传统思维，用创新的方式解决问题</p>
+                    <div class="value-icon">🎯</div>
+                    <h3>企业使命</h3>
+                    <p>用创新和品质，为客户创造价值，推动行业发展</p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon">💡</div>
-                    <h3>品质至上</h3>
-                    <p>追求卓越，每个细节都经过精心打磨</p>
+                    <h3>企业愿景</h3>
+                    <p>成为行业领先的钢结构产品供应商和解决方案服务商</p>
                 </div>
                 <div class="value-card">
-                    <div class="value-icon">🤝</div>
-                    <h3>合作共赢</h3>
-                    <p>与客户建立长期、互信的合作关系</p>
+                    <div class="value-icon">⭐</div>
+                    <h3>核心价值观</h3>
+                    <p>品质至上、诚信为本、创新驱动、合作共赢</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="team-section">
+    <section class="strengths-section">
         <div class="container">
-            <h2 class="section-title">核心团队</h2>
-            <div class="team-grid">
-                <div class="team-card">
-                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20male%20developer%20portrait&image_size=square" alt="团队成员">
-                    <h3>张明</h3>
-                    <p class="role">创始人 & 设计总监</p>
-                    <p class="bio">10年设计经验，带领团队完成众多优秀作品</p>
+            <h2 class="section-title">实力展示</h2>
+            <div class="strengths-grid">
+                <div class="strength-item">
+                    <div class="strength-number">01</div>
+                    <h3>专业团队</h3>
+                    <p>拥有一支经验丰富的技术研发和生产管理团队</p>
                 </div>
-                <div class="team-card">
-                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20female%20developer%20portrait&image_size=square" alt="团队成员">
-                    <h3>李华</h3>
-                    <p class="role">技术总监</p>
-                    <p class="bio">资深前端工程师，擅长现代化技术栈</p>
+                <div class="strength-item">
+                    <div class="strength-number">02</div>
+                    <h3>先进设备</h3>
+                    <p>引进现代化生产设备，确保产品质量和生产效率</p>
                 </div>
-                <div class="team-card">
-                    <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20male%20ux%20designer%20portrait&image_size=square" alt="团队成员">
-                    <h3>王伟</h3>
-                    <p class="role">UX设计师</p>
-                    <p class="bio">专注于用户体验设计，创造直观的产品</p>
+                <div class="strength-item">
+                    <div class="strength-number">03</div>
+                    <h3>严格品控</h3>
+                    <p>建立完善的质量管理体系，每道工序严格检验</p>
                 </div>
+                <div class="strength-item">
+                    <div class="strength-number">04</div>
+                    <h3>完善服务</h3>
+                    <p>提供售前咨询、售中指导、售后支持的全程服务</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>期待与您合作</h2>
+                <p>选择裕达钢构，选择品质与信任</p>
+                <a href="contact.html" class="btn-white">联系我们</a>
             </div>
         </div>
     </section>
@@ -101,35 +117,41 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>My Website</h3>
-                    <p>创造美好，连接世界</p>
+                    <h3>
+                        <img src="images/logo.png" alt="常州裕达钢结构工程有限公司" class="footer-logo-img">
+                        常州裕达钢结构工程有限公司
+                    </h3>
+                    <p>专业制造创意集装箱、集成房屋、移动房屋、移动卫生间</p>
                 </div>
                 <div class="footer-section">
                     <h4>快速链接</h4>
                     <ul>
                         <li><a href="index.html">首页</a></li>
-                        <li><a href="about.html">关于</a></li>
-                        <li><a href="works.html">作品</a></li>
-                        <li><a href="contact.html">联系</a></li>
+                        <li><a href="products.html">产品展示</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>社交媒体</h4>
-                    <div class="social-links">
-                        <a href="#">GitHub</a>
-                        <a href="#">LinkedIn</a>
-                        <a href="#">Twitter</a>
-                    </div>
+                    <h4>产品分类</h4>
+                    <ul>
+                        <li><a href="products.html">创意集装箱</a></li>
+                        <li><a href="products.html">集成房屋</a></li>
+                        <li><a href="products.html">移动房屋</a></li>
+                        <li><a href="products.html">移动卫生间</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>管理</h4>
-                    <div class="social-links">
-                        <a href="admin.html">留言管理</a>
-                    </div>
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>📍 江苏省常州市</li>
+                        <li>📞 138-0000-0000</li>
+                        <li>📧 info@cz889.com</li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 我的网站 版权所有</p>
+                <p>© 2026 常州裕达钢结构工程有限公司 版权所有</p>
             </div>
         </div>
     </footer>

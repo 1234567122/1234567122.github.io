@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首页 - My Website</title>
+    <title>常州裕达钢结构工程有限公司 - 创意集装箱·集成房屋</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <button class="scroll-top" id="scrollTop">↑</button>
 
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">My Website</a>
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="常州裕达钢结构工程有限公司" class="logo-img">
+                <span class="logo-text">常州裕达钢结构工程有限公司</span>
+            </a>
             <ul class="nav-list">
                 <li><a href="index.html" class="active">首页</a></li>
-                <li><a href="about.html">关于</a></li>
-                <li><a href="works.html">作品</a></li>
-                <li><a href="contact.html">联系</a></li>
+                <li><a href="products.html">产品展示</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -29,16 +32,16 @@
     <section class="hero">
         <div class="hero-bg"></div>
         <div class="hero-content">
-            <span class="hero-tag">✨ 创意设计工作室</span>
-            <h1 class="hero-title">创造数字体验的艺术</h1>
-            <p class="hero-subtitle">我们专注于网站设计、品牌打造与用户体验，为您的业务注入新活力</p>
+            <span class="hero-tag">专业钢结构制造商</span>
+            <h1 class="hero-title">创意集装箱·集成房屋·移动房屋</h1>
+            <p class="hero-subtitle">专业设计生产各类集装箱房屋、集成房屋、移动卫生间，品质保证，值得信赖</p>
             <div class="hero-buttons">
-                <a href="works.html" class="btn-primary">查看作品</a>
-                <a href="contact.html" class="btn-secondary">联系我们</a>
+                <a href="products.html" class="btn-primary">查看产品</a>
+                <a href="contact.html" class="btn-secondary">立即咨询</a>
             </div>
         </div>
         <div class="hero-scroll">
-            <span>向下滚动</span>
+            <span>了解更多</span>
             <div class="scroll-arrow">↓</div>
         </div>
     </section>
@@ -46,37 +49,37 @@
     <section class="features-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">我们的服务</span>
-                <h2 class="section-title">专业能力</h2>
+                <span class="section-tag">为什么选择我们</span>
+                <h2 class="section-title">核心优势</h2>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon-wrapper">
-                        <span class="feature-icon">🎨</span>
+                        <span class="feature-icon">⚙️</span>
                     </div>
-                    <h3>UI/UX 设计</h3>
-                    <p>打造美观、直观的用户界面，让用户享受愉悦的使用体验</p>
+                    <h3>工厂预制</h3>
+                    <p>标准化生产流程，确保产品质量稳定可靠，缩短施工周期</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon-wrapper">
-                        <span class="feature-icon">💻</span>
+                        <span class="feature-icon">�</span>
                     </div>
-                    <h3>前端开发</h3>
-                    <p>使用最新技术栈，构建高性能、可维护的现代Web应用</p>
+                    <h3>快速搭建</h3>
+                    <p>模块化设计，运输安装方便快捷，可灵活组合使用</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon-wrapper">
-                        <span class="feature-icon">📱</span>
+                        <span class="feature-icon">♻️</span>
                     </div>
-                    <h3>响应式设计</h3>
-                    <p>确保您的网站在任何设备上都能完美呈现</p>
+                    <h3>绿色环保</h3>
+                    <p>可回收利用材料，符合环保理念，降低环境影响</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon-wrapper">
-                        <span class="feature-icon">🚀</span>
+                        <span class="feature-icon">�</span>
                     </div>
-                    <h3>性能优化</h3>
-                    <p>提升页面加载速度，优化用户体验和搜索排名</p>
+                    <h3>性价比高</h3>
+                    <p>相比传统建筑，成本更低，使用年限长，投资回报快</p>
                 </div>
             </div>
         </div>
@@ -85,35 +88,150 @@
     <section class="showcase-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">精选作品</span>
-                <h2 class="section-title">我们的成果</h2>
+                <span class="section-tag">热门产品</span>
+                <h2 class="section-title">精品展示</h2>
             </div>
             <div class="showcase-grid">
                 <div class="showcase-item">
                     <div class="showcase-img">
-                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20website%20design%20project&image_size=square_hd" alt="项目">
+                        <a href="product-detail.html?id=creative-container">
+                            <img src="images/创意集装箱房.png" alt="创意集装箱">
+                        </a>
                     </div>
+                    <a href="product-detail.html?id=creative-container" class="showcase-view-btn">查看详情</a>
                     <div class="showcase-info">
-                        <span class="showcase-category">网站设计</span>
-                        <h3>企业官网设计</h3>
-                        <p>为科技公司打造的现代化品牌网站</p>
-                        <a href="works.html" class="showcase-link">查看更多 →</a>
+                        <span class="showcase-category">热销产品</span>
+                        <h3>创意集装箱房</h3>
+                        <p>灵活组合，快速搭建，适用于多种场景</p>
+                        <a href="product-detail.html?id=creative-container" class="showcase-link">
+                            查看详情
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="showcase-item">
                     <div class="showcase-img">
-                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=mobile%20application%20ui%20design%20project&image_size=square_hd" alt="项目">
+                        <a href="product-detail.html?id=container-office">
+                            <img src="images/创意集装箱房2.png" alt="集装箱办公">
+                        </a>
                     </div>
+                    <a href="product-detail.html?id=container-office" class="showcase-view-btn">查看详情</a>
                     <div class="showcase-info">
-                        <span class="showcase-category">移动应用</span>
-                        <h3>金融APP设计</h3>
-                        <p>简洁高效的移动理财应用界面</p>
-                        <a href="works.html" class="showcase-link">查看更多 →</a>
+                        <span class="showcase-category">爆款推荐</span>
+                        <h3>集装箱办公室</h3>
+                        <p>现代化办公空间，采光良好，舒适高效</p>
+                        <a href="product-detail.html?id=container-office" class="showcase-link">
+                            查看详情
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-img">
+                        <a href="product-detail.html?id=integrated-house">
+                            <img src="images/集成房屋.png" alt="集成房屋">
+                        </a>
+                    </div>
+                    <a href="product-detail.html?id=integrated-house" class="showcase-view-btn">查看详情</a>
+                    <div class="showcase-info">
+                        <span class="showcase-category">新品上市</span>
+                        <h3>集成房屋</h3>
+                        <p>一体化设计，美观实用，适用于办公居住</p>
+                        <a href="product-detail.html?id=integrated-house" class="showcase-link">
+                            查看详情
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-img">
+                        <a href="product-detail.html?id=integrated-villa">
+                            <img src="images/集成房屋2.png" alt="集成别墅">
+                        </a>
+                    </div>
+                    <a href="product-detail.html?id=integrated-villa" class="showcase-view-btn">查看详情</a>
+                    <div class="showcase-info">
+                        <span class="showcase-category">高端定制</span>
+                        <h3>集成别墅</h3>
+                        <p>高端配置，品质生活，兼具美观与实用性</p>
+                        <a href="product-detail.html?id=integrated-villa" class="showcase-link">
+                            查看详情
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-img">
+                        <a href="product-detail.html?id=mobile-house">
+                            <img src="images/移动房屋.png" alt="移动房屋">
+                        </a>
+                    </div>
+                    <a href="product-detail.html?id=mobile-house" class="showcase-view-btn">查看详情</a>
+                    <div class="showcase-info">
+                        <span class="showcase-category">人气产品</span>
+                        <h3>移动房屋</h3>
+                        <p>可移动可定制，适用于文旅、营地等场景</p>
+                        <a href="product-detail.html?id=mobile-house" class="showcase-link">
+                            查看详情
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="showcase-item">
+                    <div class="showcase-img">
+                        <a href="product-detail.html?id=mobile-homestay">
+                            <img src="images/移动民宿.png" alt="移动民宿">
+                        </a>
+                    </div>
+                    <a href="product-detail.html?id=mobile-homestay" class="showcase-view-btn">查看详情</a>
+                    <div class="showcase-info">
+                        <span class="showcase-category">特色民宿</span>
+                        <h3>移动民宿</h3>
+                        <p>特色民宿产品，与自然融为一体，独特体验</p>
+                        <a href="product-detail.html?id=mobile-homestay" class="showcase-link">
+                            查看详情
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="showcase-cta">
-                <a href="works.html" class="btn-outline">查看全部作品</a>
+                <a href="products.html" class="btn-outline">查看全部产品</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">年行业经验</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">成功案例</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">客户好评</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">产品种类</div>
+                </div>
             </div>
         </div>
     </section>
@@ -121,9 +239,12 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>准备开始您的项目了吗？</h2>
-                <p>让我们一起创造令人惊叹的数字体验</p>
-                <a href="contact.html" class="btn-white">立即联系</a>
+                <h2>准备好开始您的项目了吗？</h2>
+                <p>专业团队为您提供一站式解决方案，期待与您合作</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-white">立即咨询</a>
+                    <span class="cta-phone">📞 联系电话：138-0000-0000</span>
+                </div>
             </div>
         </div>
     </section>
@@ -132,35 +253,41 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>My Website</h3>
-                    <p>创造美好，连接世界</p>
+                    <h3>
+                        <img src="images/logo.png" alt="常州裕达钢结构工程有限公司" class="footer-logo-img">
+                        常州裕达钢结构工程有限公司
+                    </h3>
+                    <p>专业制造创意集装箱、集成房屋、移动房屋、移动卫生间</p>
                 </div>
                 <div class="footer-section">
                     <h4>快速链接</h4>
                     <ul>
                         <li><a href="index.html">首页</a></li>
-                        <li><a href="about.html">关于</a></li>
-                        <li><a href="works.html">作品</a></li>
-                        <li><a href="contact.html">联系</a></li>
+                        <li><a href="products.html">产品展示</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>社交媒体</h4>
-                    <div class="social-links">
-                        <a href="#">GitHub</a>
-                        <a href="#">LinkedIn</a>
-                        <a href="#">Twitter</a>
-                    </div>
+                    <h4>产品分类</h4>
+                    <ul>
+                        <li><a href="products.html">创意集装箱</a></li>
+                        <li><a href="products.html">集成房屋</a></li>
+                        <li><a href="products.html">移动房屋</a></li>
+                        <li><a href="products.html">移动卫生间</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>管理</h4>
-                    <div class="social-links">
-                        <a href="admin.html">留言管理</a>
-                    </div>
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>📍 江苏省常州市</li>
+                        <li>📞 138-0000-0000</li>
+                        <li>📧 info@cz889.com</li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 我的网站 版权所有</p>
+                <p>© 2026 常州裕达钢结构工程有限公司 版权所有</p>
             </div>
         </div>
     </footer>

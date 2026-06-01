@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>联系我们 - My Website</title>
+    <title>联系我们 - 常州裕达钢结构工程有限公司</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <button class="scroll-top" id="scrollTop">↑</button>
 
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="logo">My Website</a>
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="常州裕达钢结构工程有限公司" class="logo-img">
+                <span class="logo-text">常州裕达钢结构工程有限公司</span>
+            </a>
             <ul class="nav-list">
                 <li><a href="index.html">首页</a></li>
-                <li><a href="about.html">关于</a></li>
-                <li><a href="works.html">作品</a></li>
-                <li><a href="contact.html" class="active">联系</a></li>
+                <li><a href="products.html">产品展示</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html" class="active">联系我们</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -26,82 +29,88 @@
         </div>
     </nav>
 
-    <section class="page-hero" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+    <section class="page-hero">
         <div class="page-hero-content">
             <h1>联系我们</h1>
-            <p>期待与您的每一次交流</p>
+            <p>我们期待与您的合作，随时为您提供服务</p>
         </div>
     </section>
 
-    <section class="contact-page">
+    <section class="contact-section">
         <div class="container">
-            <div class="contact-page-grid">
-                <div class="contact-info-side">
-                    <h2>保持联系</h2>
-                    <p class="contact-intro">有项目想法或合作意向？随时与我们联系，我们会在24小时内回复您。</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>联系方式</h2>
+                    <p class="contact-desc">如果您有任何问题或需求，请随时与我们联系</p>
                     
-                    <div class="contact-item-large">
-                        <div class="contact-icon-large">📍</div>
-                        <div class="contact-details">
-                            <h4>公司地址</h4>
-                            <p>中国北京市朝阳区建国路88号</p>
-                            <p>SOHO现代城A座18层</p>
+                    <div class="info-list">
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div class="info-text">
+                                <h4>公司地址</h4>
+                                <p>江苏省常州市</p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="contact-item-large">
-                        <div class="contact-icon-large">📧</div>
-                        <div class="contact-details">
-                            <h4>电子邮箱</h4>
-                            <p>hello@mywebsite.com</p>
-                            <p>business@mywebsite.com</p>
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div class="info-text">
+                                <h4>联系电话</h4>
+                                <p>138-0000-0000</p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="contact-item-large">
-                        <div class="contact-icon-large">📱</div>
-                        <div class="contact-details">
-                            <h4>联系电话</h4>
-                            <p>+86 138 0000 0000</p>
-                            <p>010-88888888</p>
+                        <div class="info-item">
+                            <div class="info-icon">📧</div>
+                            <div class="info-text">
+                                <h4>电子邮箱</h4>
+                                <p>info@cz889.com</p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="contact-item-large">
-                        <div class="contact-icon-large">🕐</div>
-                        <div class="contact-details">
-                            <h4>工作时间</h4>
-                            <p>周一至周五: 9:00 - 18:00</p>
-                            <p>周六: 10:00 - 16:00</p>
+                        <div class="info-item">
+                            <div class="info-icon">⏰</div>
+                            <div class="info-text">
+                                <h4>工作时间</h4>
+                                <p>周一至周六 8:00 - 18:00</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="contact-form-side">
-                    <div class="contact-form-card">
-                        <h2>发送留言</h2>
-                        <form class="contact-form-large" id="contactForm">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label>您的姓名</label>
-                                    <input type="text" placeholder="请输入姓名" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>电子邮箱</label>
-                                    <input type="email" placeholder="请输入邮箱" required>
-                                </div>
+                <div class="contact-form-wrapper">
+                    <h2>在线留言</h2>
+                    <p class="contact-desc">填写表单，我们会尽快与您联系</p>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">您的姓名 *</label>
+                                <input type="text" id="name" name="name" placeholder="请输入姓名" required>
                             </div>
                             <div class="form-group">
-                                <label>留言主题</label>
-                                <input type="text" placeholder="请输入主题" required>
+                                <label for="phone">联系电话 *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="请输入电话" required>
                             </div>
-                            <div class="form-group">
-                                <label>留言内容</label>
-                                <textarea placeholder="请详细描述您的需求..." rows="6" required></textarea>
-                            </div>
-                            <button type="submit" class="btn-primary btn-large">发送留言</button>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">电子邮箱</label>
+                            <input type="email" id="email" name="email" placeholder="请输入邮箱">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">咨询内容</label>
+                            <select id="subject" name="subject">
+                                <option value="">请选择咨询类型</option>
+                                <option value="container">创意集装箱</option>
+                                <option value="integrated">集成房屋</option>
+                                <option value="mobile">移动房屋</option>
+                                <option value="toilet">移动卫生间</option>
+                                <option value="custom">定制需求</option>
+                                <option value="other">其他</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">详细留言 *</label>
+                            <textarea id="message" name="message" placeholder="请详细描述您的需求..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">提交留言</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -111,35 +120,41 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>My Website</h3>
-                    <p>创造美好，连接世界</p>
+                    <h3>
+                        <img src="images/logo.png" alt="常州裕达钢结构工程有限公司" class="footer-logo-img">
+                        常州裕达钢结构工程有限公司
+                    </h3>
+                    <p>专业制造创意集装箱、集成房屋、移动房屋、移动卫生间</p>
                 </div>
                 <div class="footer-section">
                     <h4>快速链接</h4>
                     <ul>
                         <li><a href="index.html">首页</a></li>
-                        <li><a href="about.html">关于</a></li>
-                        <li><a href="works.html">作品</a></li>
-                        <li><a href="contact.html">联系</a></li>
+                        <li><a href="products.html">产品展示</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>社交媒体</h4>
-                    <div class="social-links">
-                        <a href="#">GitHub</a>
-                        <a href="#">LinkedIn</a>
-                        <a href="#">Twitter</a>
-                    </div>
+                    <h4>产品分类</h4>
+                    <ul>
+                        <li><a href="products.html">创意集装箱</a></li>
+                        <li><a href="products.html">集成房屋</a></li>
+                        <li><a href="products.html">移动房屋</a></li>
+                        <li><a href="products.html">移动卫生间</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>管理</h4>
-                    <div class="social-links">
-                        <a href="admin.html">留言管理</a>
-                    </div>
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>📍 江苏省常州市</li>
+                        <li>📞 138-0000-0000</li>
+                        <li>📧 info@cz889.com</li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 我的网站 版权所有</p>
+                <p>© 2026 常州裕达钢结构工程有限公司 版权所有</p>
             </div>
         </div>
     </footer>

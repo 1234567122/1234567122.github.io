@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品展示 - 常州裕达钢结构工程有限公司</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="scroll-top" id="scrollTop">↑</button>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="常州裕达钢结构工程有限公司" class="logo-img">
+                <span class="logo-text">常州裕达钢结构工程有限公司</span>
+            </a>
+            <ul class="nav-list">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="products.html" class="active">产品展示</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>产品展示</h1>
+            <p>丰富的产品系列，满足您的不同需求</p>
+        </div>
+    </section>
+
+    <section class="products-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">全部产品</button>
+                <button class="filter-btn" data-filter="container">创意集装箱</button>
+                <button class="filter-btn" data-filter="integrated">集成房屋</button>
+                <button class="filter-btn" data-filter="mobile">移动房屋</button>
+                <button class="filter-btn" data-filter="toilet">移动卫生间</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-gallery">
+        <div class="container">
+            <div class="products-grid">
+                <div class="product-item" data-category="container">
+                    <div class="product-img-wrapper">
+                        <a href="product-detail.html?id=creative-container">
+                            <img src="images/创意集装箱房.png" alt="创意集装箱">
+                        </a>
+                        <div class="product-badge">热销</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">创意集装箱</span>
+                        <h3>创意集装箱房</h3>
+                        <p>模块化设计，可灵活组合，快速搭建，适用于办公、商业、居住等多种场景</p>
+                        <div class="product-features">
+                            <span>🏗️ 快速搭建</span>
+                            <span>🔧 可定制</span>
+                            <span>♻️ 环保</span>
+                        </div>
+                        <a href="product-detail.html?id=creative-container" class="product-btn">查看详情</a>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="container">
+                    <div class="product-img-wrapper">
+                        <a href="product-detail.html?id=container-office">
+                            <img src="images/创意集装箱房2.png" alt="集装箱办公">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">创意集装箱</span>
+                        <h3>集装箱办公室</h3>
+                        <p>现代化办公空间，采光良好，舒适高效，适合临时办公或长期使用</p>
+                        <div class="product-features">
+                            <span>💡 采光好</span>
+                            <span>🛋️ 舒适</span>
+                            <span>📐 可定制</span>
+                        </div>
+                        <a href="product-detail.html?id=container-office" class="product-btn">查看详情</a>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="integrated">
+                    <div class="product-img-wrapper">
+                        <a href="product-detail.html?id=integrated-house">
+                            <img src="images/集成房屋.png" alt="集成房屋">
+                        </a>
+                        <div class="product-badge">新品</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">集成房屋</span>
+                        <h3>集成房屋</h3>
+                        <p>一体化设计制造，装修完善，拎包入住，适用于住宅、民宿等场景</p>
+                        <div class="product-features">
+                            <span>🏠 精装修</span>
+                            <span>🔌 配套全</span>
+                            <span>⏱️ 交付快</span>
+                        </div>
+                        <a href="product-detail.html?id=integrated-house" class="product-btn">查看详情</a>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="integrated">
+                    <div class="product-img-wrapper">
+                        <a href="product-detail.html?id=integrated-villa">
+                            <img src="images/集成房屋2.png" alt="集成别墅">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">集成房屋</span>
+                        <h3>集成别墅</h3>
+                        <p>高端配置，品质生活，兼具美观与实用性，是理想的居住选择</p>
+                        <div class="product-features">
+                            <span>✨ 高品质</span>
+                            <span>🏡 美观</span>
+                            <span>🛡️ 耐用</span>
+                        </div>
+                        <a href="product-detail.html?id=integrated-villa" class="product-btn">查看详情</a>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="mobile">
+                    <div class="product-img-wrapper">
+                        <a href="product-detail.html?id=mobile-house">
+                            <img src="images/移动房屋.png" alt="移动房屋">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">移动房屋</span>
+                        <h3>移动房屋</h3>
+                        <p>可移动可搬迁，布局灵活，适用于文旅项目、营地、临时安置等</p>
+                        <div class="product-features">
+                            <span>🚗 可移动</span>
+                            <span>🎨 美观</span>
+                            <span>✅ 实用</span>
+                        </div>
+                        <a href="product-detail.html?id=mobile-house" class="product-btn">查看详情</a>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="mobile">
+                    <div class="product-img-wrapper">
+                        <a href="product-detail.html?id=mobile-homestay">
+                            <img src="images/移动民宿.png" alt="移动民宿">
+                        </a>
+                        <div class="product-badge">人气</div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">移动房屋</span>
+                        <h3>移动民宿</h3>
+                        <p>特色民宿产品，与自然融为一体，为游客提供独特的住宿体验</p>
+                        <div class="product-features">
+                            <span>🏕️ 特色</span>
+                            <span>🌿 自然</span>
+                            <span>❤️ 舒适</span>
+                        </div>
+                        <a href="product-detail.html?id=mobile-homestay" class="product-btn">查看详情</a>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="toilet">
+                    <div class="product-img-wrapper">
+                        <a href="product-detail.html?id=mobile-toilet">
+                            <img src="images/移动卫生间.png" alt="移动卫生间">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">移动卫生间</span>
+                        <h3>移动卫生间</h3>
+                        <p>环保卫生，移动便捷，适用于工地、景区、活动现场等公共场所</p>
+                        <div class="product-features">
+                            <span>🚽 卫生</span>
+                            <span>🚶 便捷</span>
+                            <span>🧼 环保</span>
+                        </div>
+                        <a href="product-detail.html?id=mobile-toilet" class="product-btn">查看详情</a>
+                    </div>
+                </div>
+
+                <div class="product-item" data-category="toilet">
+                    <div class="product-img-wrapper">
+                        <a href="product-detail.html?id=eco-toilet">
+                            <img src="images/环保公厕.png" alt="环保公厕">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">移动卫生间</span>
+                        <h3>环保公厕</h3>
+                        <p>高端环保移动公厕，配备智能设施，美观实用，适合城市公共区域</p>
+                        <div class="product-features">
+                            <span>🌟 高端</span>
+                            <span>🌱 环保</span>
+                            <span>🧠 智能</span>
+                        </div>
+                        <a href="product-detail.html?id=eco-toilet" class="product-btn">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>需要定制专属产品？</h2>
+                <p>我们支持个性化定制，根据您的需求量身打造</p>
+                <a href="contact.html" class="btn-white">立即咨询定制</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>
+                        <img src="images/logo.png" alt="常州裕达钢结构工程有限公司" class="footer-logo-img">
+                        常州裕达钢结构工程有限公司
+                    </h3>
+                    <p>专业制造创意集装箱、集成房屋、移动房屋、移动卫生间</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="products.html">产品展示</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>产品分类</h4>
+                    <ul>
+                        <li><a href="products.html">创意集装箱</a></li>
+                        <li><a href="products.html">集成房屋</a></li>
+                        <li><a href="products.html">移动房屋</a></li>
+                        <li><a href="products.html">移动卫生间</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>📍 江苏省常州市</li>
+                        <li>📞 138-0000-0000</li>
+                        <li>📧 info@cz889.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 常州裕达钢结构工程有限公司 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

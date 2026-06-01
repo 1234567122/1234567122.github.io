@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品详情 - 常州裕达钢结构工程有限公司</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button class="scroll-top" id="scrollTop">↑</button>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="常州裕达钢结构工程有限公司" class="logo-img">
+                <span class="logo-text">常州裕达钢结构工程有限公司</span>
+            </a>
+            <ul class="nav-list">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="products.html">产品展示</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 产品详情 -->
+    <section class="product-detail-section">
+        <div class="container">
+            <div class="product-detail-grid">
+                <div class="product-detail-image">
+                    <img id="productImage" src="" alt="产品图片">
+                </div>
+                <div class="product-detail-info">
+                    <span class="product-detail-category" id="productCategory"></span>
+                    <h1 class="product-detail-title" id="productTitle"></h1>
+                    <p class="product-detail-desc" id="productDesc"></p>
+                    
+                    <div class="product-detail-features">
+                        <h3>产品特点</h3>
+                        <ul id="productFeatures"></ul>
+                    </div>
+
+                    <div class="product-detail-specs">
+                        <h3>产品规格</h3>
+                        <div id="productSpecs"></div>
+                    </div>
+
+                    <div class="product-detail-actions">
+                        <a href="contact.html" class="btn-primary">立即咨询</a>
+                        <a href="products.html" class="btn-outline">返回产品列表</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="常州裕达钢结构工程有限公司" class="logo-img">
+                        <span class="logo-text">常州裕达钢结构工程有限公司</span>
+                    </div>
+                    <p>专业制造创意集装箱、集成房屋、移动房屋、移动卫生间</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <a href="index.html">首页</a>
+                    <a href="products.html">产品展示</a>
+                    <a href="about.html">关于我们</a>
+                    <a href="contact.html">联系我们</a>
+                </div>
+                <div class="footer-links">
+                    <h4>产品分类</h4>
+                    <a href="products.html">创意集装箱</a>
+                    <a href="products.html">集成房屋</a>
+                    <a href="products.html">移动房屋</a>
+                    <a href="products.html">移动卫生间</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系我们</h4>
+                    <p>📍 江苏省常州市</p>
+                    <p>📞 138-0000-0000</p>
+                    <p>✉️ info@cz889.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 常州裕达钢结构工程有限公司 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button class="scroll-top" id="scrollTop">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // 产品数据
+        const products = {
+            'creative-container': {
+                image: 'images/创意集装箱房.png',
+                category: '创意集装箱',
+                title: '创意集装箱房',
+                desc: '模块化设计，可灵活组合，快速搭建，适用于办公、商业、居住等多种场景。采用高品质钢材，安全耐用，是现代建筑的理想选择。',
+                features: ['快速搭建，缩短工期', '模块化设计，灵活组合', '高品质钢材，安全耐用', '可重复利用，环保节能', '可定制化，满足个性化需求'],
+                specs: [
+                    { label: '尺寸', value: '可定制' },
+                    { label: '材质', value: '高强度钢材' },
+                    { label: '使用寿命', value: '15-20年' },
+                    { label: '适用场景', value: '办公、商业、居住' }
+                ]
+            },
+            'container-office': {
+                image: 'images/创意集装箱房2.png',
+                category: '创意集装箱',
+                title: '集装箱办公室',
+                desc: '现代化办公空间，采光良好，舒适高效，适合临时办公或长期使用。配备完善的办公设施，让您的工作更加便捷。',
+                features: ['采光充足，视野开阔', '舒适办公环境', '配备完善设施', '可随时搬迁', '灵活扩展空间'],
+                specs: [
+                    { label: '尺寸', value: '可定制' },
+                    { label: '材质', value: '高强度钢材' },
+                    { label: '使用寿命', value: '15-20年' },
+                    { label: '适用场景', value: '办公、会议' }
+                ]
+            },
+            'integrated-house': {
+                image: 'images/集成房屋.png',
+                category: '集成房屋',
+                title: '集成房屋',
+                desc: '一体化设计制造，装修完善，拎包入住，适用于住宅、民宿等场景。高品质配置，让您享受品质生活。',
+                features: ['精装修，拎包入住', '一体化设计，美观大方', '高品质配置', '快速交付', '安全舒适'],
+                specs: [
+                    { label: '尺寸', value: '可定制' },
+                    { label: '材质', value: '轻钢龙骨' },
+                    { label: '使用寿命', value: '20-25年' },
+                    { label: '适用场景', value: '住宅、民宿' }
+                ]
+            },
+            'integrated-villa': {
+                image: 'images/集成房屋2.png',
+                category: '集成房屋',
+                title: '集成别墅',
+                desc: '高端配置，品质生活，兼具美观与实用性，是理想的居住选择。豪华装修，顶级配置，让您享受尊贵生活。',
+                features: ['高端豪华配置', '品质生活体验', '美观实用结合', '私人定制服务', '尊贵舒适'],
+                specs: [
+                    { label: '尺寸', value: '可定制' },
+                    { label: '材质', value: '轻钢龙骨' },
+                    { label: '使用寿命', value: '20-25年' },
+                    { label: '适用场景', value: '高端住宅、别墅' }
+                ]
+            },
+            'mobile-house': {
+                image: 'images/移动房屋.png',
+                category: '移动房屋',
+                title: '移动房屋',
+                desc: '可移动可搬迁，布局灵活，适用于文旅项目、营地、临时安置等。随时随地，想搬就搬，让生活更加自由。',
+                features: ['可移动可搬迁', '布局灵活多变', '适用多种场景', '舒适便捷', '快速部署'],
+                specs: [
+                    { label: '尺寸', value: '可定制' },
+                    { label: '材质', value: '钢结构' },
+                    { label: '使用寿命', value: '15-20年' },
+                    { label: '适用场景', value: '文旅、营地、临时安置' }
+                ]
+            },
+            'mobile-homestay': {
+                image: 'images/移动民宿.png',
+                category: '移动房屋',
+                title: '移动民宿',
+                desc: '特色民宿产品，与自然融为一体，为游客提供独特的住宿体验。独特设计，让您的民宿脱颖而出。',
+                features: ['特色设计风格', '融入自然环境', '独特住宿体验', '高人气吸引力', '灵活经营'],
+                specs: [
+                    { label: '尺寸', value: '可定制' },
+                    { label: '材质', value: '钢结构' },
+                    { label: '使用寿命', value: '15-20年' },
+                    { label: '适用场景', value: '民宿、文旅项目' }
+                ]
+            },
+            'mobile-toilet': {
+                image: 'images/移动卫生间.png',
+                category: '移动卫生间',
+                title: '移动卫生间',
+                desc: '环保卫生，移动便捷，适用于工地、景区、活动现场等公共场所。卫生清洁，使用方便，是临时卫生间的理想选择。',
+                features: ['环保卫生', '移动便捷', '适用多种场所', '清洁方便', '耐用可靠'],
+                specs: [
+                    { label: '尺寸', value: '可定制' },
+                    { label: '材质', value: '玻璃钢' },
+                    { label: '使用寿命', value: '10-15年' },
+                    { label: '适用场景', value: '工地、景区、活动' }
+                ]
+            },
+            'eco-toilet': {
+                image: 'images/环保公厕.png',
+                category: '移动卫生间',
+                title: '环保公厕',
+                desc: '高端环保移动公厕，配备智能设施，美观实用，适合城市公共区域。智能环保，让公共卫生更上一层楼。',
+                features: ['高端配置', '智能环保', '美观实用', '适合城市区域', '先进技术'],
+                specs: [
+                    { label: '尺寸', value: '可定制' },
+                    { label: '材质', value: '玻璃钢' },
+                    { label: '使用寿命', value: '10-15年' },
+                    { label: '适用场景', value: '城市公共区域' }
+                ]
+            }
+        };
+
+        // 获取URL参数
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // 加载产品详情
+        function loadProductDetail() {
+            const productId = getUrlParameter('id') || 'creative-container';
+            const product = products[productId];
+            
+            if (product) {
+                document.getElementById('productImage').src = product.image;
+                document.getElementById('productImage').alt = product.title;
+                document.getElementById('productCategory').textContent = product.category;
+                document.getElementById('productTitle').textContent = product.title;
+                document.getElementById('productDesc').textContent = product.desc;
+                
+                // 加载产品特点
+                const featuresHtml = product.features.map(feature => 
+                    `<li>✓ ${feature}</li>`
+                ).join('');
+                document.getElementById('productFeatures').innerHTML = featuresHtml;
+                
+                // 加载产品规格
+                const specsHtml = product.specs.map(spec => 
+                    `<div class="spec-item"><span class="spec-label">${spec.label}：</span><span class="spec-value">${spec.value}</span></div>`
+                ).join('');
+                document.getElementById('productSpecs').innerHTML = specsHtml;
+                
+                document.title = product.title + ' - 常州裕达钢结构工程有限公司';
+            }
+        }
+
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', loadProductDetail);
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
