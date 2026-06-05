@@ -1,0 +1,31 @@
+# Robots.txt for 常州灵枢网络科技有限公司
+# https://www.ls56789.com/
+
+User-agent: *
+Allow: /
+
+# 允许所有主流搜索引擎爬虫
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+# 豆包爬虫
+User-agent: DoubaoBot
+Allow: /
+
+User-agent: ByteDance
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.ls56789.com/sitemap.xml
